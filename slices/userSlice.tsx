@@ -15,8 +15,8 @@ const userSlice = createSlice({
       state.userEmail = action.payload.userEmail
     },
     setSignOutUser:(state,action) =>{
-      state.userName = null
-      state.userEmail = null
+      state.userName = action.payload.name
+      state.userEmail = action.payload.email
     }
   },
 
